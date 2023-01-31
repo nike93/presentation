@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/white.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">				
+				<section>
+					<div class="logo">
+						<img src="./assets/logo.png" alt="AWS logo" style="width: 250px; margin: 0;">
+					</div>
+					<h2>AWS Database Services</h2>
+					<img src="./assets/head-image.PNG" alt="Amazon Database" style="width: 80%;">
+				</section>
+				<section>
+					<h3>What problem do databases solve?</h3>
+					<img src="./assets/problem_solving.png" alt="problem" style="width: 150px; margin: 0;">
+					<p class="fragment">Earlier, companies used to deploy databases on in-house servers. They would need to hire people for the day-to-day maintenance and performance troubleshooting of these in-house databases</p>
+					<p class="fragment">Databases are important backend systems that are used to store, manage, update, and analyze data for all types of applications</p>
+				</section>
+				<section>
+					<h3>Types of AWS Databases</h3>
+					<p style="font-size: 30px;">AWS Cloud Databases provides a broad selection of purpose-built databases for any enterprise. AWS databases support all database management tasks, such as server provisioning, patching, configuration, and backups.</p>
+					<img class="fragment" src="./assets/database.PNG" alt="database" style="margin: 0">
+				</section>
+				<section>
+					<h3>Advantages of AWS Databases</h3>
+					<div class="container" style="display: flex; flex-wrap: wrap;">
+						<div class="fragment" style="width: 49%;">
+							<img src="./assets/manager.png" alt="manager" style="width: 150px;">
+							<p>Fully Managed</p>
+						</div>
+						<div class="fragment" style="width: 49%; border-left: 1px solid grey;">
+							<img src="./assets/scalable.jpg" alt="Scalable" style="width: 150px;">
+							<p>Scalable</p>
+						</div>
+						<div class="fragment" style="width: 49%; border-top: 1px solid grey;">
+							<img src="./assets/available.PNG" alt="available" style="width: 150px;">
+							<p>Highly available</p>
+						</div>
+						<div class="fragment" style="width: 49%; border-left: 1px solid grey; border-top: 1px solid grey;">
+							<img src="./assets/security.PNG" alt="security" style="width: 150px;">
+							<p>Security</p>
+						</div>
+					</div>
+				</section>
+				<section>
+					<section>
+						<h3>RDS (Relational Database Service)</h3>
+						<p></p>
+						<img src="./assets/rds.png" alt="rds">
+						<p style="font-size: 30px;">Relational Database Service (RDS) is a fully managed service provided by AWS. It allows users to set up, manage and monitor a database in the cloud. Seven engines are provided by the service to choose from MySQL, MariaDB, Oracle, and SQL Server, and these engines provide support for DBMSs like MySQL.</p>
+					</section>
+					<section>
+						<h3>Benefits of Amazon RDS</h3>
+						<ul>
+							<li>It provides high performance and is fast to scale</li>
+							<li>It provides high availability as a result of two distinct replication features, namely, Multi-AZ deployments and Read Replicas</li>	
+							<li>It automatically takes care of Backup and Restore by patching up the AWS database software</li>	
+							<li>It also takes care of Maintenance and Upgrades, automatically</li>	
+						</ul>
+					</section>					
+				</section>
+				<section>
+					<section>
+						<h3>Redshift</h3>
+						<p style="font-size: 28px; margin: 0;">Best for: Large-scale data warehouses and data migrations, analytics</p>
+						<img src="./assets/redshift.png" alt="redshift" style="margin: 0;">
+						<p style="font-size: 30px;">Amazon Redshift is a petabyte-scale data warehousing service provided by Amazon and is a fully managed service. It allows us to interpret data to gain more insight into the business and customers. It offers query performance using SQL-based tools and business intelligence applications, regardless of data set size.</p>
+					</section>
+					<section>
+						<ul>
+							<li>Parallel queries across multiple nodes can be performed</li>
+							<li>Automatically backed up to Amazon S</li>
+							<li>Cost-effective over other data warehouse solutions</li>
+							<li>Built-in security as Amazon Redshift provides end-to-end encryption and enables users to configure firewall rules</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h3>Aurora</h3>
+						<p style="font-size: 28px; margin: 0;">Best for: SaaS apps like ERP, CRM, and eCommerce</p>
+						<img src="./assets/aurora.png" alt="aurora" style="margin: 0; height: 340px;">
+						<p style="font-size: 30px;">Amazon Aurora is another Relational Database Engine, fully managed by AWS and compatible with MySQL and PostgreSQL. It has better performance capabilities than most commercial databases, with throughput capability of up to five times when compared to MySQL and three times when compared to PostgreSQL.</p>
+					</section>
+					<section>
+						<h3>Benefits of Amazon Aurora</h3>
+						<ul>
+							<li>It provides high performance and scalability</li>
+							<li>It’s highly secure</li>
+							<li>It offers high availability and durability</li>
+							<li>It’s fully managed</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h3>DynamoDB</h3>
+						<p style="font-size: 28px; margin: 0;">Best for: Mobile and web apps, gaming, IoT</p>
+						<img src="./assets/dynamo.png" alt="dynamo">
+						<p style="font-size: 30px;">Amazon DynamoDB is a NoSQL database service fully managed by the AWS cloud. It provides fast, predictable, and seamlessly scalable performance. It doesn’t require any schema. In DynamoDB, there are basically three core components: TABLES, ITEMS, ATTRIBUTES</p>
+					</section>
+					<section>
+						<h3>Benefits of Amazon DynamoDB</h3>
+						<ul>
+							<li>Easy to set up and manage</li>
+							<li>Data is automatically replicated across multiple Availability Zones</li>
+							<li>Secure due to provision of encryption at rest</li>
+							<li>Provision for on-demand Backup and restoration capabilities</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h3>ElastiCache</h3>
+						<p style="font-size: 28px; margin: 0;">Best for: Caching, chat, BI and analytics, session store, gaming leaderboards</p>
+						<img src="./assets/elastic.png" alt="elastic">
+						<p style="font-size: 30px;">There are various benefits of using Amazon ElastiCache. Besides being easy to set up and deploy, ElastiCache also improves applications’ performance as it reduces disk reads</p>
+					</section>
+					<section>
+						<h3>Benefits of Amazon ElastiCache</h3>
+						<ul style="font-size: 30px;">
+							<li>Response time: ElastiCache reduces the response time as it retrieves data from a fast in-memory system. It reduces the dependence on disk-based databases which are usually slower</li>
+							<li>Scalability: Amazon ElastiCache is designed to be able to modify itself, automatically. It can scale out or scale up depending on the fluctuating application requirements</li>
+							<li>Complete management: Amazon ElastiCache is fully managed, so the common administrative tasks such as hardware provisioning, failure recovery, backups, and more are all automated</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<h2>Thanks for watching!</h2>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
